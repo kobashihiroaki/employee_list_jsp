@@ -9,6 +9,7 @@ document.getElementById("api_action").addEventListener("click", function() {
     fetch(requestUrl)
     .then(function (response) {
     	if (response.ok) {
+    		console.log("ok");
     		return response.json();
 	    } else {
 	    	alert ("エラーです");
